@@ -1,0 +1,80 @@
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+  }
+html , body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(80deg, rgba(237,255,2,1) 0%, rgba(226,34,34,1) 50%, rgba(149,34,226,1) 100%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 500px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+}
+#storiya{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#storiya::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    height: 90px;
+    width: 90px;
+     border: 3px solid rgba(255, 255, 255, 0.1);
+
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(360deg, rgba(237,255,2,1) 0%, rgba(226,34,34,1) 50%, rgba(149,34,226,1) 100%) border-box;
+    border-radius: 50%;
+    border: 3px solid transparent;
+
+    display: inline-block;
+    overflow: hidden;
+    padding: 4px;
+}
+.story img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+    transition: all linear 2s;
+    
+}
+.imge{
+    height: 380px;
+    width: 100%;
+}
+.imge img{
+    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
